@@ -1,0 +1,31 @@
+TrueToast. Manual de uso.
+
+• Contenido del archivo
+
+1. style.css 
+2. Icon.css 
+3. TToast.Js 
+
+• Instrucciones:
+1) Extraer en carpeta raiz el contenido.
+2) Enlazar los .css en el archivo HTMl.
+3) Enlazar el script TToast.js en el archivo HTML.
+4) Usar True Toast en los eventos que gustes basta con llamar la funcion ShowToast('', '');
+5) Colocar el mensaje y tipo de diseño sea Info, Warning o complete.
+6) Listo. 
+
+Estructura de la Funcion ShowToast.
+
+• ShowToast('El usuario ha sido guardado correctamente', 'warning') •
+
+- El primer parametro es el mensaje.
+
+- El Segundo es el tipo de Toast.[
+	1. info.
+	2. warning.
+	3. complete.
+]
+
+
+
+Rialaq Software. GPL-3.0 Open Source License.
