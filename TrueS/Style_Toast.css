@@ -1,0 +1,93 @@
+/* Font Face */
+@font-face{
+    font-family: 'PTSans';
+    src: url(ToastFont.ttf);
+}
+
+/* BASE CSS */
+.TToast{ /* ------------> DIV: Toast Container */
+    position: relative;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    overflow: hidden;
+    height: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background: #212121;
+    font-family: 'PTSans';
+    margin: auto;  
+    border-radius: 4px;
+    width: 0;
+    cursor: pointer;
+    padding: 0;
+}
+#TToast{
+    opacity: 0;
+}
+.TToast:hover{
+    height: 65px;
+}
+#MsjBox{ /* ------------> label: Text Container */
+    position: relative;
+    left: 24%;
+    top: 15px;
+    display: inline-block;
+    font-size: 100%;
+    color: white;
+    cursor: pointer;
+}
+#headerText{
+    position: absolute;
+    left: 100px;
+    font-size: 20px;
+    left: 115px;
+    /* padding: 5px; */
+    top: 15px;
+    color: white;
+    font-weight: bold;
+    /* background:red; */
+}
+#Yes{
+    position: relative;
+    display: inline-block;
+    color: white;
+    right: 10px;
+    top: 35px;
+    text-align: center;
+    background: #00796B;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#IconToast{
+    position: fixed;
+    padding: 15px;
+    color: white;
+    font-size: 35px;
+    background: #303F9F;
+    top: 35px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+}
+
+
+/* Float Left Resolution Adaptive */
+@media only screen and (max-width: 1366px){
+    .TToast{
+        left: 65%;
+    }
+}
+
+@media only screen and (max-width: 1152px){
+    .TToast{
+        left: 60%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .TToast{
+        left: 55%;
+    }    
+}
