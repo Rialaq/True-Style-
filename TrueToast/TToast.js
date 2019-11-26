@@ -93,15 +93,15 @@ function ShowToast(MText, Type){
 
     console.log(ObjOn);
 
-    // if(State == true){
-    //     setTimeout(() => {
-    //         Obj.style.opacity = "0";
-    //         State = false;
-    //         console.log("TrueToast - Status: " + State);
-    //         setTimeout(() => {
-    //             Obj.style.width = "0px";
-    //             Obj.style.padding= "0px";        
-    //         }, 300);
-    //     }, 5000);
-    // }
+    if(State == true){
+        setTimeout(() => {
+            Obj.style.opacity = "0";
+            State = false;
+            console.log("TrueToast - Status: " + State);
+            setTimeout(() => {
+                Obj.style.width = "0px";
+                Obj.style.padding= "0px";        
+            }, 300);
+        }, 5000);
+    }
 }
